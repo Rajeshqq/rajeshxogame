@@ -112,7 +112,22 @@ class StartGame {
 
 public class XoGame {
     public static void main(String[] args) {
+        String option;
+        Scanner oo=new Scanner(System.in);
         StartGame ob = new StartGame();
-        ob.newgame();
+        while(true)
+        {
+        
+        System.out.println("do you want to continue the new game");
+        System.out.println("YES or NO");
+            option=oo.next();
+        if(option.equals("yes"))
+        {
+            ob.newgame();
+        }
+        else{
+            System.exit(0);
+        }
+        }
     }
 }
